@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySphere</title>
+    <link rel="stylesheet" href="credit.css">
+    <script src="date.js"></script>
+    
+</head>
+<body>
+    <header> <!--https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/header-->
+        <h1>MySphere</h1>
+    </header>
+    <h2>Thanks for using our website !</h2>
+    <table>
+    <tr>
+        <th colspan="1">Legal mention</th>
+    </tr>
+    <tr>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor, purus in maximus vulputate, urna lacus feugiat mauris, nec dignissim nisi orci sed nisi. Morbi in molestie eros. Integer et laoreet risus. Vivamus varius sapien in dolor interdum bibendum. Sed ut dui ut est hendrerit malesuada at eu justo. In pretium, velit ac ultricies tincidunt, libero purus sagittis sem, convallis bibendum purus lorem ac justo. Etiam fringilla velit eget gravida scelerisque. In ut neque tincidunt, efficitur leo ut, vehicula libero.
+
+Suspendisse potenti. Morbi euismod dictum libero, at accumsan diam iaculis eu. Curabitur at mollis odio. Proin quam ex, molestie eget nisi at, faucibus porttitor justo. Maecenas vel nisl a augue convallis placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas porttitor, arcu et finibus interdum, lacus lectus dapibus enim, eu lobortis erat mi at odio. Nam sed eros at ante blandit cursus. Quisque condimentum nibh nibh, bibendum ornare nisi placerat sed. Praesent vestibulum dolor libero, eget varius libero ornare nec. Aenean vitae eleifend quam, quis pellentesque orci. Vivamus vitae aliquam sem. Aenean ac tincidunt metus. Quisque et augue sapien. Nam efficitur turpis eget elit facilisis finibus. </td>
+    </tr>
+</table>
+<form>
+    <label for="Name">First name</label>
+    <input id="Name" type="text" name="Name" value=" " >
+    <br>
+    <label for="nom">Last name</label>
+    <input id="nom" type="text" name="nom" value=" ">
+    <br>
+    <input id="femme" type="radio" name="sexe" value="" checked>
+    <label for="femme">Woman</label>
+    <input id="homme" type="radio" name="sexe" value="">
+    <label for="homme">Man</label>
+    <input id="kebab" type="radio" name="sexe" value="">
+    <label for="kebab">Other (kebab)</label>
+    <br>
+    <textarea name="impression" rows="2" cols="50"></textarea>
+    <br>
+    <input type="submit" value="Leave a review">
+    
+</form>
+
+<marquee behavior="scroll" bgcolor="yellow" loop="-1" width="30%"><i><font color="blue"><strong>Today's date is :<span id="time"></span></strong>  </font></i></marquee> 
+
+</body>
+</html>
