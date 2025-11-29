@@ -1,6 +1,13 @@
-/* Source - https://stackoverflow.com/a
-// Posted by Ullas, modified by community. See post 'Timeline' for change history
-// Retrieved 2025-11-17, License - CC BY-SA 3.0*/
+// La fonction qui mettra à jour l'heure
+// https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+// https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 
-var today = new Date();
-document.getElementById('time').innerHTML = today;
+window.addEventListener("load", () => {
+    function majHeure () {
+        let heure = new Date().toLocaleString()
+        let baliseHeure = document.getElementById('heure') // Changera l'heure pour la balise d'id "heure"
+        baliseHeure.innerHTML = heure
+    }
+    majHeure()
+    setInterval(majHeure, 1000) // Toutes les secondes on appelle la fonction qui va changer l'heure
+})
