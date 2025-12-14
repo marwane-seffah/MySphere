@@ -1,7 +1,5 @@
-.logo
 .logo {
-  background: left / cover
-    url("/shared-assets/images/examples/puppy-header.jpg");
+  background: left / cover;
   display: flex;
   height: 120px;
   align-items: center;
