@@ -1,0 +1,94 @@
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    display: grid ;
+}
+
+.header text {
+    background-color: #ff69b4;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+.background image{
+    width: 1440px;
+    height: 1024px;
+    aspect-ratio: 45/32;
+}
+
+.background-image_1 {
+    width: 230px;
+    height: 309px;
+    aspect-ratio: 230/309;
+}
+
+.background-image-2 {
+    width: 179.002px;
+    height: 319.125px;
+    transform: rotate(-9.866deg);
+    aspect-ratio: 179.00/319.12;
+}
+
+.background-image_3 {
+    width: 314.573px;
+    height: 246.625px;
+    transform: rotate(5.646deg);
+    aspect-ratio: 314.57/246.63;
+}
+.background-image_4{
+    width: 360px;
+    height: 432px;
+    transform: rotate(-8.258deg);
+    aspect-ratio: 5/6;
+}
+
+.background-image_5 {
+    width: 1440px;
+    height: 1024px;
+    aspect-ratio: 45/32;
+}
+
+.button_1{
+    display : grid;
+    height : 15px;
+    width :15px;
+}
+
+.button {
+    display : grid;
+    width: 30%;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: linear-gradient(purple, darkviolet);
+    color: white;
+    border: 2px solid black;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.header h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 2px 2px black;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.4em;
+}
+
+.button_top {
+
+}
+
+
