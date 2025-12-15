@@ -17,13 +17,20 @@ body {
     background-image: url(assets/y2k/wallpaper_y2k.png);
 }
 
-header .text {
+
+
+#text {
     /*background-color: #ff69b4;;*/
     padding: 20px;
     text-align: left;
     color: #FFF;
     border-bottom: 3px solid black;
 }
+
+#popup {
+    
+}
+
 /*
 header {
     display: flex;
@@ -41,6 +48,17 @@ header {
     line-height: 150%;
     text-decoration-style: solid;
 }*/
+
+#posting {
+    position: absolute;
+    top: 997px;
+    bottom: 100%;
+    background: #d16bc4;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
 #navbar {
     /*position: sticky; */
