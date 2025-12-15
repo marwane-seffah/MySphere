@@ -3,6 +3,7 @@
 body {
 
   margin: 0;
+  padding: 0;
 
   height: 1024px;
   background-image: url("assets/wallpaperv2.png");
@@ -33,7 +34,7 @@ header {
 
 #date {
   position: absolute;
-  right: 30px;
+  right: 35px;
 }
 
 #Titre {
@@ -55,6 +56,12 @@ header {
 .popup {
     background-color: #c0c0c0;
     width: fit-content;
+  
+}
+
+.profile-description{
+  position: relative;
+  left: 53%;
 }
 
 .profile-select-window {
@@ -75,10 +82,8 @@ header {
 }
 
 #Mii{
-  position: relative;
-  bottom: 0%;
-  margin-left: 90%;
-  right: 10px;;
+  position: absolute;
+  right: 0;
   width: 92px;
   height: 134px;
   
@@ -89,8 +94,6 @@ button {
 }
 
 #legal{
-
-  
   color: #FFF;
   font-family: "Kdam Thmor Pro";
   font-size: 48px;
