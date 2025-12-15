@@ -1,8 +1,8 @@
-@media screen {
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 body {
+  margin: 0;
+
     height: 1024px;
     background-image: url("assets/wallpaperv2.png");
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@ body {
 
 header {
   display: flex;
-  position: sticky;
+  /*position: sticky;*/
   top: 0;
   width: 100%;
   padding: 10px 16px;
@@ -49,6 +49,28 @@ header {
   text-underline-offset: auto;
   text-underline-position: from-font;
 
+}
+
+#Mii{
+  position: absolute;
+  right: 10px;;
+  bottom: -80px;
+  width: 92px;
+  height: 134px;
+  
+}
+
+#legal{
+  position: absolute;
+  bottom : 1%;
+  color: #FFF;
+  font-family: "Kdam Thmor Pro";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
 }
 
 /* Source : https://developer.mozilla.org/en-US/ 
