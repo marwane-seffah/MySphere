@@ -30,7 +30,12 @@ header {
 
 #logo { 
   text-decoration-line: underline;
+  color: white;
   }
+
+header a:visited {
+  color: #FFF;
+}
 
 #date {
   position: absolute;
@@ -54,25 +59,28 @@ header {
 }
 
 .popup {
+  position: absolute;
     background-color: #c0c0c0;
     width: fit-content;
+    right : 10%;
+    top: 45%;
   
 }
 
 .profile-description{
   position: relative;
-  left: 53%;
 }
 
 .profile-select-window {
   background-color: #D9D9D9;
   height: 100px;
-  width: 40%
+  width: 40%;
+  margin-left: 10%;
 }
 
 #profil{
-  width: 115px;
-  height: 22px;
+  width: 50px;
+  color: black;
 }
 
 .header-popup {
@@ -82,7 +90,7 @@ header {
 }
 
 #Mii{
-  position: absolute;
+  position: relative;
   right: 0;
   width: 92px;
   height: 134px;
