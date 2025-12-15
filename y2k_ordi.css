@@ -1,22 +1,113 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
+
+* {
+  font-family: "Jacquarda Bastarda 9", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {overflow-x: hidden;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "jacquarda-bastarda-9-regular", serif;
     background-color: black;
     display: grid ;
     background-image: url(assets/y2k/wallpaper_y2k.png);
 }
 
 header .text {
-    background-color: #ff69b4;;
+    /*background-color: #ff69b4;;*/
     padding: 20px;
-    text-align: center;
+    text-align: left;
     border-bottom: 3px solid black;
 }
+/*
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 10px 16px;
+    height: 76px;
+    background: rgba(142, 189, 222, 0.90);
+    font-family: "Kdam Thmor Pro";
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration-style: solid;
+}*/
 
 #navbar {
-    display: inline;
+    /*position: sticky; */
+    display: flex;
+    top: 0%;
+    position: solid;
+
+    background-color: #ff69b4;;
+    padding: 20px;
+    text-align: start;
+    border-bottom: 3px solid black;
+    align-items: flex-start;
+    justify-content: space-between;
 }
+
+#navbar :first-child{
+    align-self: flex-end;
+}
+
+
+#main #header{
+    align-self: start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+
+#main #header_2 {
+    align-self: end;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#window {
+    width: 978px;
+    height: 828px;
+    background-color: rgba(255, 48, 217, 0.70);
+    margin: auto;
+    display: flex;
+
+}
+
+#sidebar{
+    row-gap: 1px;
+    width: 209px;
+    height: 809px;
+    background: #D9D9D9;
+}
+
+#main {
+    width: 624px;
+    height: 728px;
+    background: #EE86ED;
+    margin: auto;
+    z-index: 1;
+}
+#main #write :first-child{
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+    width: 624px;
+    height: 728px;
+    background-color: #EE86ED;
+    background-position: 50% 50%;
+}
+
 
 .background image{
     width: 1440px;
@@ -24,33 +115,56 @@ header .text {
     aspect-ratio: 45/32;
 }
 
-.background-image_1 {
+#image_1 {
+    position: absolute;
+    top: 50%;
     width: 230px;
     height: 309px;
     aspect-ratio: 230/309;
+    background-position: 20%;
+    z-index: -1;
 }
 
-.background-image-2 {
+#image-2 {
+    position: absolute;
+    top: 100%;
+    bottom: 0%;
     width: 179.002px;
     height: 319.125px;
     transform: rotate(-9.866deg);
     aspect-ratio: 179.00/319.12;
+    z-index: -1;
 }
 
-.background-image_3 {
+#image_3 {
+    position:absolute;
+    top: 100%;
+    bottom:0%;
+    object-position: left;
     width: 314.573px;
     height: 246.625px;
     transform: rotate(5.646deg);
     aspect-ratio: 314.57/246.63;
+    z-index: -1;
 }
-.background-image_4{
+#image_4{
+    position: absolute;
+    left: 952px;
+    top: 50%;
+    bottom: 0%;
     width: 360px;
     height: 432px;
     transform: rotate(-8.258deg);
     aspect-ratio: 5/6;
+    z-index: -1;
 }
 
-.background-image_5 {
+#image_5 {
+    position: absolute;
+    left: 1104px;
+    right: 735px;
+    top:100%;
+    bottom: 0%;
     width: 1440px;
     height: 1024px;
     aspect-ratio: 45/32;
@@ -58,7 +172,7 @@ header .text {
 
 button {
     display : grid;
-    width: 30%;
+    width: 100%;
     padding: 15px;
     margin-bottom: 10px;
     background: linear-gradient(purple, darkviolet);
@@ -99,3 +213,6 @@ footer {
 }
 
 
+
+
+/* https://developer.mozilla.org/fr/docs/Web/CSS/Guides/Box_alignment */
