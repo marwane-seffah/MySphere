@@ -31,8 +31,24 @@ header {
   }
 
 #date { /*à bouger*/
-  position: relative;
-  left: 800px;
+  position: absolute;
+  right: 30px;
+}
+
+#Titre {
+  color: #001D52;
+  font-family: "Kdam Thmor Pro";
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+
 }
 
 /* Source : https://developer.mozilla.org/en-US/ 
