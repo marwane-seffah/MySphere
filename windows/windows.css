@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body {
+    font-family: "Kdam Thmor Pro";
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    height: 1024px;
+    background-image: url("../assets/wallpaperv2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+header {
+  display: flex;
+  top: 0;
+  width: 100%;
+  padding: 10px 16px;
+  height: 76px;
+  background: rgba(142, 189, 222, 0.90);
+  font-family: "Kdam Thmor Pro";
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration-style: solid;
+}
+
+header div {
+    width: fit-content;
+    display: flex;
+}
+
+#logo { 
+  text-decoration-line: underline;
+  }
+
+#date {
+  position: absolute;
+  right: 30px;
+}
+
+.popup {
+    background-color: #c0c0c0;
+    width: fit-content;
+}
+
+.header-popup {
+    background-color: #0100C8;
+    height: 24px;
+    width: 100%;
+}
+
+.popup h1, p {
+    padding: 0 18px 18px;
+    margin: 0;
+}
+
+#frame #text {
+    position: absolute;
+    bottom: 50%;
+}
+
+#legal{
+    color: #FFF;
+    position: absolute;
+    bottom : 1%;
+    font-size: 48px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+}
+
+/* Source : https://developer.mozilla.org/en-US/ 
+la vie j'adore ce site il est trop bien renseigné*/
