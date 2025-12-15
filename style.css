@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 body {
+
   margin: 0;
 
-    height: 1024px;
-    background-image: url("assets/wallpaperv2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 1024px;
+  background-image: url("assets/wallpaperv2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
   display: flex;
-  /*position: sticky;*/
+  position: sticky;
   top: 0;
   width: 100%;
   padding: 10px 16px;
@@ -30,7 +31,7 @@ header {
   text-decoration-line: underline;
   }
 
-#date { /*à bouger*/
+#date {
   position: absolute;
   right: 30px;
 }
@@ -51,26 +52,50 @@ header {
 
 }
 
+.popup {
+    background-color: #c0c0c0;
+    width: fit-content;
+}
+
+.profile-select-window {
+  background-color: #D9D9D9;
+  height: 100px;
+  width: 40%
+}
+
+#profil{
+  width: 115px;
+  height: 22px;
+}
+
+.header-popup {
+    background-color: #0100C8;
+    height: 24px;
+    width: 100%;
+}
+
 #Mii{
-  position: absolute;
+  position: relative;
+  bottom: 0%;
+  margin-left: 90%;
   right: 10px;;
-  bottom: -80px;
   width: 92px;
   height: 134px;
   
 }
 
+button {
+  width: 35px;
+}
+
 #legal{
-  position: absolute;
-  bottom : 1%;
+
+  
   color: #FFF;
   font-family: "Kdam Thmor Pro";
   font-size: 48px;
-  font-weight: 400;
-  line-height: 150%;
   text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-underline-position: from-font;
+
 }
 
 /* Source : https://developer.mozilla.org/en-US/ 
