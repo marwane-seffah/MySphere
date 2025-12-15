@@ -89,6 +89,12 @@ header a:visited {
     width: 100%;
 }
 
+.popup h1, p {
+    padding: 0 18px 18px;
+    margin: 0;
+}
+
+
 #Mii{
   position: relative;
   right: 0;

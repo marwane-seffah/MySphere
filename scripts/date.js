@@ -1,11 +1,8 @@
 // La fonction qui mettra à jour l'heure
 // https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
 // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
-console.log("ok")
-
 
 window.addEventListener("DOMContentLoaded", () => {
-    console.log("ok");
     function majHeure () {
         let date = new Date().toLocaleString();
         let baliseDate = document.getElementById('date'); // Changera l'heure pour la balise d'id "heure"
