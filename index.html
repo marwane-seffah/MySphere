@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +11,46 @@
     La landing page de notre site
     -->
     <header>
-        <h1 id="logo"><a href="index.html"> MySphere</h1></a>
+        <h1 id="logo"><a href="index.html"> MySphere</a></h1>
         <p id="date">00:00:00 DD/MM/YY</p>
     </header>
-
-    <h1 id="Titre">Welcome to</h1>
-    <h1 id="Titre2">MySphere</h1>
-
-
-    <h2 id="selection">select a profile</h2>
-    <div class="popup">
-        <div class="header-popup"></div>
-        
-        <div class="profile-select-window">
-            <h3 id="profil"><a href="index_tasnim.html">._R3gina_.</h3></a>
+    <div id="main">
+        <div id="left">
+            <div>
+                <h2 id="Titre">Welcome to</h2>
+                <h2 id="Titre2">MySphere</h2>
+            </div>
+            
+            <a id="legal" href="credit-page/credit.html">legal stuff</a>
         </div>
 
-        <div class="profile-description">
-        <p> Last connexions (We miss you ♡): </p>
-            <p>• 6hr ago</p>
-           <p>• I luv cookies </p> 
-           <p>• 31/02/2094</p> 
-        </div>
+        <div id="right">
+            <div id="select-container">
+                <h2 id="selection">select a profile</h2>
+                <div class="popup">
+                    <div class="header-popup"></div>
+                    
+                    <div class="profile-select-window">
+                        <h3 id="profil"><a href="index_tasnim.html">._R3gina_.</a></h3>
+                    </div>
 
+                    <div class="profile-description">
+                    <p> Last connexions (We miss you ♡): </p>
+                        <ul>
+                            <li>6hr ago</li>
+                            <li>device: "I luv cookies" </li> 
+                            <li>31/02/2094</li> 
+                        </ul>    
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <a id="legal" href="credit-page/credit.html">legal stuff</a>
-
-    <a href="windows/windows.html"><img id ="Mii" src="assets/mii.png" alt="a mii image" ></a>
+    
+    <div id="mii-container">
+        <a href="windows/windows.html"><img id="mii-image" src="assets/mii.png" alt="a mii image" ></a>
+    </div>
     
     <script src ="scripts/date.js"></script>
 </body>

@@ -1,18 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 body {
+  position: relative;
 
   margin: 0;
   padding: 0;
 
-  height: 1024px;
+  overflow: hidden;
+
+  /* min-height: 100vh; */
+
   background-image: url("assets/wallpaperv2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+#mii-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#mii-image {
+  width: 92px;
+  height: 134px;bottom: 0;
+  right: 0;
+  transform: translate(0, -100%);
+  transform: rotate(-90deg);
+}
+
 header {
-  display: flex;
+  /* display: flex;
   position: sticky;
   top: 0;
   width: 100%;
@@ -25,13 +43,41 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  text-decoration-style: solid; */
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  padding: 18px 0 9px;
+  top: 0;
+  width: 100%;
+  height: 76px;
+  background: rgba(142, 189, 222, 0.90);
+  font-family: "Kdam Thmor Pro";
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
   text-decoration-style: solid;
+  z-index: 100;
 }
 
 #logo { 
   text-decoration-line: underline;
   color: white;
   }
+
+a {
+  color: #0100C8;
+}
+
+a:visited {
+  color: #001D52;
+}
+
+a:hover {
+    color: #FFF;
+}
 
 header a:visited {
   color: #FFF;
@@ -41,6 +87,15 @@ header a:visited {
   position: absolute;
   top: 38px;
   right: 35px;
+}
+
+#main {
+  display: flex;
+  justify-content: space-between;
+}
+
+#left {
+    width: 60%;
 }
 
 #Titre {
@@ -54,6 +109,7 @@ header a:visited {
 
 #Titre2 {
   margin-left: 150px;
+  margin-bottom: 240px;
   color: #001D52;
   font-family: "Kdam Thmor Pro";
   font-size: 96px;
@@ -62,24 +118,30 @@ header a:visited {
   text-decoration-line: underline;
 }
 
-#selection { /* superpose header*/
-  position: relative;
-  margin-left: 1195px;
-  bottom: 325px;
+#right {
+    width: 40%;
+}
+
+#select-container {
+  display: block;
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+
+#selection {
   color: #001D52;
   font-family: "Kdam Thmor Pro";
   font-size: 48px;
   font-weight: 400;
   line-height: 72px;
+  margin: 0;
+  padding: 0;
 }
 
 .popup {
-  position: absolute; /*absolute pas bon*/
   background-color: #c0c0c0;
   width: 515px;
   height: 250px;
-  right : 200px;
-  top: 350px;
   
 }
 
@@ -87,7 +149,7 @@ header a:visited {
   position: relative;
   margin-left: 200px;
   color: #000;
-  text-align: center;
+  text-align: left;
   font-family: "Kdam Thmor Pro";
   font-size: 16px;
   font-weight: 400;
@@ -119,16 +181,6 @@ header a:visited {
 .popup h1, p {
     padding: 0 18px 18px;
     margin: 0;
-}
-
-
-#Mii{
-  position: relative;
-  left: 1600px;
-  bottom: 100px;
-  width: 92px;
-  height: 134px;
-  
 }
 
 button {
