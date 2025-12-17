@@ -27,43 +27,43 @@ body {
     border-bottom: 3px solid black;
 }
 
-#popup {
-    
-}
 
-/*
-header {
-    display: flex;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    padding: 10px 16px;
-    height: 76px;
-    background: rgba(142, 189, 222, 0.90);
-    font-family: "Kdam Thmor Pro";
-    color: #FFF;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    text-decoration-style: solid;
-}*/
 
-#posting {
+.posting {
     position: absolute;
-    top: 997px;
-    bottom: 100%;
-    background: #d16bc4;
+    top: 30%;
+    bottom: 65%;
+    left: 500px ;
+    right: 300px;
+    background: #9D2CA7;
     border: none;
     padding: 5px 10px;
     border-radius: 8px;
     cursor: pointer;
+    z-index: 100;
+}
+
+.sending {
+    position: absolute;
+    top: 30%;
+    bottom: 65%;
+    left: 1000px ;
+    right: 10%;
+    background: #9D2CA7;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 100;
 }
 
 #navbar {
     /*position: sticky; */
     display: flex;
+    position: sticky;
     top: 0%;
+    width: 100%;
+    padding: 20px;
     position: solid;
     background-color: #ff69b4;;
     padding: 20px;
@@ -157,8 +157,6 @@ header {
 
 #image_3 {
     position:absolute;
-    top: 100%;
-    bottom:0%;
     top: 100%;
     bottom:0%;
     left: 960px;
