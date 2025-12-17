@@ -64,6 +64,47 @@ header div {
     margin: 0;
 }
 
+#ds {
+    width: 442px;
+    height: 346px;
+}
+
+#dog {
+    width: 118px;
+    height: 115px;
+}
+
+#sparkles {
+    width: 167px;
+    height: 186px;
+}
+
+#star {
+    width: 129px;
+    height: 137px;
+}
+
+#heart {
+    width: 137px;
+    height: 126px;
+}
+
+#cursor {
+    width: 62px;
+    height: 64px;
+}
+
+#mess {
+    width: 309hpx;
+    height: 267px;
+}
+
+#flower {
+    width: 151px;
+    height: 147px;
+}
+
+
 #frame #text {
     position: absolute;
     bottom: 0%;
