@@ -39,53 +39,80 @@ header a:visited {
 
 #date {
   position: absolute;
+  top: 38px;
   right: 35px;
 }
 
 #Titre {
+  margin-left: 150px;
   color: #001D52;
   font-family: "Kdam Thmor Pro";
   font-size: 96px;
-  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+#Titre2 {
+  margin-left: 150px;
+  color: #001D52;
+  font-family: "Kdam Thmor Pro";
+  font-size: 96px;
   font-weight: 400;
   line-height: 150%;
   text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
-  text-underline-position: from-font;
+}
 
+#selection { /* superpose header*/
+  position: relative;
+  margin-left: 1195px;
+  bottom: 325px;
+  color: #001D52;
+  font-family: "Kdam Thmor Pro";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
 }
 
 .popup {
-  position: absolute;
-    background-color: #c0c0c0;
-    width: fit-content;
-    right : 10%;
-    top: 45%;
+  position: absolute; /*absolute pas bon*/
+  background-color: #c0c0c0;
+  width: 515px;
+  height: 250px;
+  right : 200px;
+  top: 350px;
   
 }
 
 .profile-description{
   position: relative;
+  margin-left: 200px;
+  color: #000;
+  text-align: center;
+  font-family: "Kdam Thmor Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  bottom: 150px;
 }
 
 .profile-select-window {
   background-color: #D9D9D9;
-  height: 100px;
-  width: 40%;
-  margin-left: 10%;
+  height: 155px;
+  width: 179px;
+  margin-left: 5%;
 }
 
 #profil{
-  width: 50px;
-  color: black;
+  position: relative;
+  top: 55px;
+  margin-left: 38px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .header-popup {
     background-color: #0100C8;
-    height: 24px;
+    height: 50px;
     width: 100%;
 }
 
@@ -97,7 +124,8 @@ header a:visited {
 
 #Mii{
   position: relative;
-  right: 0;
+  left: 1600px;
+  bottom: 100px;
   width: 92px;
   height: 134px;
   
@@ -112,8 +140,13 @@ button {
   font-family: "Kdam Thmor Pro";
   font-size: 48px;
   text-decoration-line: underline;
+  display: flex;
+  width: 535px;
+  height: 74px;
+  justify-content: center;
 
 }
 
-/* Source : https://developer.mozilla.org/en-US/ 
-la vie j'adore ce site il est trop bien renseigné*/
+/* Sources : https://developer.mozilla.org/en-US/ 
+la vie j'adore ce site il est trop bien renseigné
+https://www.w3schools.com/ */
