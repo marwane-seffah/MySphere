@@ -53,7 +53,9 @@ header * {
   width: 40%;
 }
 
-
+#right * {
+  max-width: 100%;
+}
 
 .popup {
     background-color: #c0c0c0;
@@ -71,14 +73,15 @@ header * {
 
 .header-popup {
     background-color: #0100C8;
-    height: 24px;
+    min-height: 24px;
+    height: fit-content;
     width: 100%;
 }
 
 #Titre {
   color: #001D52;
   font-family: "Kdam Thmor Pro";
-  font-size: 96px;
+  font-size: 4.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -91,14 +94,45 @@ header * {
 
 }
 
-#legal-section {
-  margin: auto;
+/* #legal-header {
+  top: 0;
+  transform: translateY(-50%);
+} */
+
+#legal-header h2 {
+  margin: 0;
+  text-align: center;
+  padding: 8px 0;
+  color: #FFF;
+  text-decoration: underline #FFF 1px solid;
+  text-decoration-skip-ink: auto;
 }
 
-#legal-section h2 {
-  text-align: center;
+#legal-section {
+  margin: auto 32px;
+  padding: 0;
+  max-width: 70%;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+#legal-section #content {
+  padding: 16px;
+  max-height: 500px;
 }
 
 label {
   display: block;
+}
+
+#submit-section {
+  text-align: center;
+}
+
+input[type="submit"] {
+  margin-top: 18px;
+  border: 0;
+  color: #FFF;
+  background-color: #0100C8;
+  font-family: "Kdam Thmor Pro";
 }
