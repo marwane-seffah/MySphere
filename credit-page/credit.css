@@ -45,6 +45,10 @@ a:visited {
   color: #001D52;
 }
 
+header a:visited {
+  color: #FFF;
+}
+
 a:hover {
     color: #FFF;
 }
