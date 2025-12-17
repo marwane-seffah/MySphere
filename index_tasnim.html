@@ -23,26 +23,21 @@
         
         <div id="window"> <!-- rectangle rose transparent-->
             <div id="sidebar"> <!-- rectangle gris-->
-                <button> + New post</button>
-                <button onclick="windows.location.href='https://www.mickael-martin-nevot.com/'">Discover</button>
-                <button> Friends</button>
-                <button><a href="assets/y2k/rick_test_2.mp4">A little something</a></button>
-                <button><a href="credit-page/credit.html">Leave a review</button></a>
+                <button onclick="showWindowNewPost()"> + New post</button>
+                <button onclick="showDiscover()">Discover</button>
+                <button onclick="showFriends()"> Friends</button>
+                <button onclick="showSurprise()">A little something</button> 
+                <button><a href="credit-page/credit.html">Leave a review</a></button> <!-- Je crois les button avec des <a> c'est bancal peut-être remplace les button par des divs et mets aux divs le même style qu'aux boutons -->
             </div>
 
-
-            
-            
             <div id="main"> <!--rectangle blanc-->
-                <div id="write">
-                    <div class="popup">
-                        <div class="header-popup"></div>
+                <div id="write"> <!-- rectangle rose -->
+                        <!-- <div class="header-popup"></div> -->
                         <form>
                             <label for="">Write here<textarea name="impression" rows="20" cols="50"></textarea></label>
                             <input class="posting" type="submit" value="Post">
                             <input class="sending" type="submit" value="Send to">
                         </form>
-                    </div>
                 </div>
                 <!--<div id="posting">
                     <button>Post</button>
@@ -50,6 +45,10 @@
                 </div> -->
             </div>
         </div>
+        <!-- Les div représentant les "fenêtres" -->
+         <div>
+            <div></div>
+         </div>
 
         <!--Les images de fond -->
         
@@ -62,8 +61,9 @@
             <p><a href="credit-page/credit.html">Legal mention here</a></p>
         </footer>
         <button class="button_top">top</button>
-    </body>
 
+        <script src="scripts/page.js"></script> <!-- le script relié à la page -->
+    </body>
 </html>
 
 <!-- faire le flavicon !!!-->
