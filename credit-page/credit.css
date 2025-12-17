@@ -36,7 +36,18 @@ header * {
 #logo { 
     text-decoration-line: underline;
 }
-  
+
+a {
+  color: #0100C8;
+}
+
+a:visited {
+  color: #001D52;
+}
+
+a:hover {
+    color: #FFF;
+}
 
 #main {
     display: flex;
