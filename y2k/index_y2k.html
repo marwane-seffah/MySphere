@@ -4,17 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MySphere</title> <!--ca c'est le titre de la page donc ce qui est marque en haut dans la barre des fenetre-->
-        <!--<link rel="stylesheet" href="./y2k_ordi.css">-->
-        <link id="theme" rel="stylesheet" href="./y2k_ordi.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">    
+        <link id="theme" rel="stylesheet" href="./emo_ordi.css">
+
     </head>
 
     <body>  <!-- la page y2k du site-->
 
-        <button id="button_change" onclick="changerTheme()">Changer le thème</button>
+        
         <script src="page.js"></script>
          <!--mettre en backgroung image le wallpaper -->
         <header>
@@ -28,15 +24,18 @@
             
         </header>
         
-        
+        <button id="button_change" onclick="changerTheme()">Changer le thème</button>
         <div id="window"> <!-- rectangle rose transparent-->
             <div id="sidebar"> <!-- rectangle gris-->
                 <button onclick="showWindowNewPost()"> + New post</button>
                 <button onclick="showDiscover()">Discover</button>
                 <button onclick="showFriends()"> Friends</button>
                 <button onclick="showSurprise()">A little something</button> 
-                <button onclick="showCreditpage()">Leave a review</button>
-                <!--<button><a href="credit-page/credit.html">Leave a review</a></button>--> <!-- Je crois les button avec des <a> c'est bancal peut-être remplace les button par des divs et mets aux divs le même style qu'aux boutons -->
+                <button><a href="credit-page/credit.html">Leave a review</a></button>
+                 
+                <!-- Je crois les button avec des <a> c'est bancal peut-être remplace les button par des divs et mets aux divs le même style qu'aux boutons -->
+                <button id="switch_theme">Switch vibe</button>
+
             </div>
 
             <div id="main"> <!--rectangle blanc-->
@@ -73,6 +72,7 @@
         <button class="button_top">top</button>
 
         <script src="scripts/page.js"></script> <!-- le script relié à la page -->
+
     </body>
 </html>
 

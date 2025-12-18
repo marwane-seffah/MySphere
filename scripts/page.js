@@ -18,6 +18,22 @@ function showWindowWriteSomething () {
 
 }
 
+<<<<<<< HEAD
+const switchButton = document.getElementById("switch_theme");
+const themeLink = document.getElementById("theme");
+
+let currentTheme = "emo";
+
+switchButton.addEventListener("click", () => {
+    if (currentTheme === "emo") {
+        themeLink.href = "./y2k_ordi.css";
+        currentTheme = "y2k";
+    } else {
+        themeLink.href = "./emo_ordi.css";
+        currentTheme = "emo";
+    }
+});
+=======
 function showCreditpage(){
     window.location.href='credit-page/credit.html'
 
@@ -35,3 +51,4 @@ function changerTheme() {
 }
 
 
+>>>>>>> 785b9f8c82199bc36abcab534f74a87f0fff2a78
