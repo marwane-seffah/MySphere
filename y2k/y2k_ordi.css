@@ -238,6 +238,10 @@ footer {
 }
 
 .button_top {
+    position:fixed;
+    z-index: 100;
+    top:90%;
+    bottom:80%;
 
 }
 
