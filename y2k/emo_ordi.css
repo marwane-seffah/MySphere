@@ -13,7 +13,10 @@ body {
 }
 
 body #image_1 {
+  position: relative;
     content: url("../assets/emo/case\ 1.png");
+    left: 600px;
+    bottom: 100px;
 }
 
 body #image-2 {
@@ -72,7 +75,6 @@ header {
   margin-top: 30px;
   width: 100%;
   padding: 20px;
-  position: solid;
   padding: 20px;
   text-align: start;
   align-items: flex-start;
@@ -88,4 +90,22 @@ header {
 #write {
   margin-left: 850px;
   margin-top: 200px;
+}
+
+footer {
+  background-color: black;
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    width: 100vw;
+}
+
+button {
+  background-color: #531D67;
+   display: center;
+    color: white;
+
+
 }
