@@ -165,6 +165,7 @@ header a:visited {
 }
 
 #profil{
+  color: black;
   position: relative;
   top: 55px;
   margin-left: 38px;
