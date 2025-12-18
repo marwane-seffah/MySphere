@@ -17,15 +17,26 @@ body #image_1 {
 }
 
 body #image-2 {
-    content: url("../assets/emo/pfp.png");
+  position: relative;
+  content: url("../assets/emo/pfp.png");
+  bottom: 450px;
+  left: 360px;
+  height: 25%
+
 }
 
 body #image_3 {
-    content: url("../assets/emo/moon\ 1.png");
+  position: relative;
+  content: url("../assets/emo/moon\ 1.png");
+  bottom: 730px;
+  left: 850px;
 }
 
 body #image_4 {
-    content: url("../assets/emo/chain_skellet.png");
+  position: relative;
+  content: url("../assets/emo/chain_skellet.png");
+  bottom: 580px;
+  right: 270px;
 }
 
 #text {
@@ -58,7 +69,7 @@ header {
 #navbar {
   display: flex;
   position: sticky;
-  top: 20px;
+  margin-top: 30px;
   width: 100%;
   padding: 20px;
   position: solid;
@@ -73,4 +84,8 @@ header {
   font-size: 40px;
   font-weight: 400;
   bottom: 40px;
+}
+#write {
+  margin-left: 850px;
+  margin-top: 200px;
 }
