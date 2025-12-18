@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MySphere</title> <!--ca c'est le titre de la page donc ce qui est marque en haut dans la barre des fenetre-->
-        <link id="theme" rel="stylesheet" href="./y2k_ordi.css">
+        <link id="theme" rel="stylesheet" href="./emo_ordi.css">
 
     </head>
 
@@ -34,8 +34,6 @@
                 <button><a href="credit-page/credit.html">Leave a review</a></button>
                  
                 <!-- Je crois les button avec des <a> c'est bancal peut-être remplace les button par des divs et mets aux divs le même style qu'aux boutons -->
-                <button id="switch_theme">Switch vibe</button>
-
             </div>
 
             <div id="main"> <!--rectangle blanc-->
@@ -65,13 +63,14 @@
         <img id="image_3" src="assets/y2k/victoria_secret_webp.webp" alt="victoria_secret"/>
         <img id="image_4" src="assets/y2k/juicy_bag_webp.webp" alt="juicy_bag"/>
 
+        <button class="button_top">top</button>
+
+        <button id="button_change" onclick="changerTheme()">Change theme</button>
         <footer> 
             <p><a href="credit-page/credit.html">Legal mention here</a></p>
             <p><a href="https://www.instagram.com/mysphere_slayy/">Our instagram account</a></p>
         </footer>
-        <button class="button_top">top</button>
-
-        <button id="button_change" onclick="changerTheme()">Changer le thème</button>
+        
 
         <script src="scripts/page.js"></script> <!-- le script relié à la page -->
 
