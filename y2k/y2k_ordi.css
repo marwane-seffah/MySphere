@@ -234,6 +234,134 @@ footer {
 }
 
 
-
-
 /* https://developer.mozilla.org/fr/docs/Web/CSS/Guides/Box_alignment */
+
+
+/* base pour la responsive*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Evite les débordements sur telephone */
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Fenêtre principale */
+#window {
+    max-width: 978px;
+    width: 95%;
+    height: auto;
+    min-height: 828px;
+    flex-wrap: wrap;
+}
+
+/* Sidebar */
+#sidebar {
+    min-height: 809px;
+}
+
+/* Main */
+#main {
+    max-width: 624px;
+    width: 100%;
+    height: auto;
+    min-height: 728px;
+}
+
+/* Boutons */
+button {
+    width: 90%;
+    max-width: 400px;
+}
+
+
+/* TABLETTE (≤ 1024px)*/
+
+@media screen and (max-width: 1024px) {
+
+    #window {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sidebar {
+        width: 100%;
+        height: auto;
+        min-height: unset;
+    }
+
+    #main {
+        width: 100%;
+    }
+
+    .posting,
+    .sending {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+
+/* telephone (≤ 600px) */
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #text {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #window {
+        width: 100%;
+        min-height: unset;
+    }
+
+    #sidebar {
+        display: none; /* optionnel : enlève la sidebar sur mobile */
+    }
+
+    #main {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.6em;
+    }
+
+    /* Images décoratives désactivées sur mobile */
+    #image_1,
+    #image_2,
+    #image_3,
+    #image_4 {
+        display: none;
+    }
+}

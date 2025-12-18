@@ -202,3 +202,125 @@ button {
 /* Sources : https://developer.mozilla.org/en-US/ 
 la vie j'adore ce site il est trop bien renseigné
 https://www.w3schools.com/ */
+
+/* base de la responsive */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  min-height: 100vh;
+  background-position: center;
+}
+
+/* Evite les débordements horizontaux */
+#main {
+  flex-wrap: wrap;
+}
+
+/* tablette (≤ 1024px)*/
+
+@media screen and (max-width: 1024px) {
+
+  #Titre,
+  #Titre2 {
+    font-size: 64px;
+    margin-left: 80px;
+  }
+
+  #left,
+  #right {
+    width: 100%;
+  }
+
+  #select-container {
+    margin-top: 200px;
+    transform: none;
+  }
+
+  .popup {
+    width: 90%;
+    max-width: 515px;
+    height: auto;
+  }
+
+  .profile-description {
+    margin-left: 40px;
+    bottom: 0;
+  }
+}
+
+/* telephone (≤ 600px) */
+
+@media screen and (max-width: 600px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 12px;
+    text-align: center;
+  }
+
+  #date {
+    position: static;
+    margin-top: 6px;
+  }
+
+  #Titre,
+  #Titre2 {
+    font-size: 42px;
+    margin-left: 20px;
+    line-height: 120%;
+  }
+
+  #Titre2 {
+    margin-bottom: 80px;
+  }
+
+  #selection {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  #select-container {
+    margin-top: 40px;
+  }
+
+  .popup {
+    width: 95%;
+    height: auto;
+  }
+
+  .profile-description {
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .profile-select-window {
+    margin: 20px auto;
+  }
+
+  #legal {
+    font-size: 28px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Mii discret sur telephone */
+  #mii-container {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
