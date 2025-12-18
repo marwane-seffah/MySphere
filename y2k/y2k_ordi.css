@@ -14,11 +14,7 @@ body {
     font-family: "jacquarda-bastarda-9-regular", serif;
     background-color: black;
     display: grid ;
-<<<<<<< HEAD
-    background-image: url(../assets/y2k/wallpaper_y2k_webp.webp);
-=======
-    background-image: url("../assets/y2k/wallpaper_y2k.png");
->>>>>>> f00aa1b352bf827037fd310bbb64983cac464a3f
+    background-image: url("../assets/y2k/wallpaper_y2k_webp.webp");
 }
 
 
