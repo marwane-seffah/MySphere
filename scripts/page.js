@@ -17,3 +17,21 @@ function showSurprise () {
 function showWindowWriteSomething () {
 
 }
+
+function showCreditpage(){
+    window.location.href='credit-page/credit.html'
+
+}
+
+
+function changerTheme() {
+  const theme = document.getElementById("theme");
+
+  if (theme.getAttribute("href") === "light.css") {
+    theme.setAttribute("href", "dark.css");
+  } else {
+    theme.setAttribute("href", "light.css");
+  }
+}
+
+

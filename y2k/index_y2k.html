@@ -4,25 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MySphere</title> <!--ca c'est le titre de la page donc ce qui est marque en haut dans la barre des fenetre-->
-<<<<<<< HEAD
-        <link rel="stylesheet" href="./y2k_ordi.css">
-
-=======
         <!--<link rel="stylesheet" href="./y2k_ordi.css">-->
-        <link rel="stylesheet" href="./emo_ordi.css">
-        
->>>>>>> 20ed8a3664ac0dda252545d44f928710b4eab183
+        <link id="theme" rel="stylesheet" href="./y2k_ordi.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">    
     </head>
 
     <body>  <!-- la page y2k du site-->
+
+        <button id="button_change" onclick="changerTheme()">Changer le thème</button>
+        <script src="page.js"></script>
          <!--mettre en backgroung image le wallpaper -->
         <header>
             <div id="text">
-                <h1><a href="index.html">Mysphere</a></h1>
-            </div> 
+                <h1><a href="../index.html">Mysphere</a></h1> 
+            </div>
             <div id="navbar">
-                <a href="index.html">Home</a>
-                <a href="credit-page/credit.html">Contact Us</a>
+                <a href="../index.html">Home</a>
+                <a href="../credit-page/credit.html">Contact Us</a>
             </div>
             
         </header>
@@ -34,14 +35,15 @@
                 <button onclick="showDiscover()">Discover</button>
                 <button onclick="showFriends()"> Friends</button>
                 <button onclick="showSurprise()">A little something</button> 
-                <button><a href="credit-page/credit.html">Leave a review</a></button> <!-- Je crois les button avec des <a> c'est bancal peut-être remplace les button par des divs et mets aux divs le même style qu'aux boutons -->
+                <button onclick="showCreditpage()">Leave a review</button>
+                <!--<button><a href="credit-page/credit.html">Leave a review</a></button>--> <!-- Je crois les button avec des <a> c'est bancal peut-être remplace les button par des divs et mets aux divs le même style qu'aux boutons -->
             </div>
 
             <div id="main"> <!--rectangle blanc-->
                 <div id="write"> <!-- rectangle rose -->
                         <!-- <div class="header-popup"></div> -->
                         <form>
-                            <label for="">Write here<textarea name="impression" rows="20" cols="50"></textarea></label>
+                            <label>Write here<textarea name="impression" rows="20" cols="50"></textarea></label>
                             <input class="posting" type="submit" value="Post">
                             <input class="sending" type="submit" value="Send to">
                         </form>
