@@ -206,8 +206,11 @@ button {
 #button_change {
     display: grid;
     background-color: #9D2CA7;
-    top: 100%;
-    bottom: 0%;
+    position:fixed;
+    z-index: 100;
+    top:90%;
+    bottom:80%;
+    left: 30%;
 
 }
 
