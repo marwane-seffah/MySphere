@@ -14,7 +14,7 @@ body {
     font-family: "jacquarda-bastarda-9-regular", serif;
     background-color: black;
     display: grid ;
-    background-image: url("../assets/y2k/wallpaper_y2k.png");
+    background-image: url("../assets/y2k/wallpaper_y2k_webp.webp");
 }
 
 
@@ -64,7 +64,6 @@ body {
     top: 0%;
     width: 100%;
     padding: 20px;
-    position: solid;
     background-color: #ff69b4;;
     padding: 20px;
     text-align: start;
@@ -204,6 +203,15 @@ button {
 
 }
 
+#button_change {
+    display: grid;
+    background-color: #9D2CA7;
+    top: 100%;
+    bottom: 0%;
+
+}
+
+
 /*
 .button_1{
     display : grid;
@@ -233,6 +241,19 @@ footer {
 
 }
 
+
+/* boutton pour le leave a review*/
+/*
+.button-style {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9D2CA7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}*/
 
 /* https://developer.mozilla.org/fr/docs/Web/CSS/Guides/Box_alignment */
 

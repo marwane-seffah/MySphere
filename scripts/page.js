@@ -18,6 +18,7 @@ function showWindowWriteSomething () {
 
 }
 
+<<<<<<< HEAD
 const switchButton = document.getElementById("switch_theme");
 const themeLink = document.getElementById("theme");
 
@@ -32,3 +33,22 @@ switchButton.addEventListener("click", () => {
         currentTheme = "emo";
     }
 });
+=======
+function showCreditpage(){
+    window.location.href='credit-page/credit.html'
+
+}
+
+
+function changerTheme() {
+  const theme = document.getElementById("theme");
+
+  if (theme.getAttribute("href") === "light.css") {
+    theme.setAttribute("href", "dark.css");
+  } else {
+    theme.setAttribute("href", "light.css");
+  }
+}
+
+
+>>>>>>> 785b9f8c82199bc36abcab534f74a87f0fff2a78
