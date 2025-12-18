@@ -10,9 +10,7 @@
 
 </head>
 <body>
-    <!--
-    Notre easter egg
-    -->
+    <!-- Notre easter egg -->
     <header>
         <div>
             <h1 id="logo"><a href="../index.html"> MySphere</h1></a>        
@@ -21,11 +19,17 @@
         </div>
     </header>
 
-    <div class="popup">
-        <div class="header-popup"></div>
-            <h1>0 problem(s)</h1>
-            <p>Your PC is happy, as you should be.</p>
+    <div id="container-popup">
+        <img id="heart" src="../assets/windows/heart.png" alt="a heart image">
+        <img id="cursor" src="../assets/windows/mouse.png" alt="a cursor-looking image">
+
+        <div class="popup">
+            <div class="header-popup"></div>
+                <h1>0 problem(s)</h1>
+                <p>Your PC is happy, as you should be.</p>
+        </div>
     </div>
+    
 
     <div id="frame">
         <img src="../assets/windows/frame.png" alt="the frame">
@@ -35,26 +39,36 @@
         </div>
     </div>
 
-    <div class="popup">
-        <div class="header-popup"></div>
-            <h1>leave a review</h1>
-            <p>Give us 5 stars pls</p>
-            <button onclick="">rate</button>
+    <div id="container-review">
+        <div class="popup" id="review">
+            <div class="header-popup"></div>
+                <h1>leave a review</h1>
+                <p>Give us 5 stars pls</p>
+                <button onclick="window.location.href='../credit-page/credit.html'">rate</button>
+        </div>
+        <img id="star" src="../assets/windows/star.png" alt="an image of a mario kart star">
     </div>
+    
 
-    <img id="ds" src="../assets/windows/3DS_2.png" alt="a image of a 3DS with a cat in panick and a mii staring at your soul">
+    <img id="flower" src="../assets/windows/flower.png" alt="a happy flower image">
     <img id="dog" src="../assets//windows/dog.png" alt="a dog image">
     <img id="sparkles" src="../assets/windows/sparkles.png" alt="an image of sparkles">
-    <img id="star" src="../assets/windows/star.png" alt="an image of a mario kart star">
-    <img id="heart" src="../assets/windows/heart.png" alt="a heart image">
-    <img id="cursor" src="../assets/windows/mouse.png" alt="a cursor-looking image">
     <img id="mess" src="../assets/windows/stuff.png" alt="an image of messy stuff including browser screenshots, a green crossbody bag, letters and notebooks">
-    <img id="flower" src="../assets/windows/flower.png" alt="a happy flower image">
+    <img id="disco" src="../assets/windows/boule.png" alt="a disco ball image">
+    <img id="apps" src="../assets/windows/apps.png" alt="an image of two apps icons">
 
+    <div id="ds">
+        <img id="ds-img" src="../assets/windows/3DS_2.png" alt="a image of a 3DS with a cat in panick and a mii staring at your soul">
+        <p id="links">
+            <a id="legal" href="../index.html">> home</a>
+            <a id="legal" href="../credit-page/credit.html">> legal stuff</a>
+            <a id="legal" href="../credit-page/credit.html">> contact us</a>
+        </p>
+    </div>
+    
 
-    <a id="legal" href="credit-page/credit.html">legal stuff</a>
-
-    <button>top</button>
     <script src ="../scripts/date.js"></script>
+    <script src="../scripts/drag.js"></script>
+    <script src="../scripts/page.js"></script>
 </body>
 </html>

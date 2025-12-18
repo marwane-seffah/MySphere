@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 body {
+    position: relative;
     font-family: "Kdam Thmor Pro";
     font-weight: 400;
     color: #000000;
@@ -9,7 +10,8 @@ body {
     background-image: url("../assets/wallpaperv2.png");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-y: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 header {
@@ -26,6 +28,11 @@ header {
   font-weight: 400;
   line-height: 150%;
   text-decoration-style: solid;
+  z-index: 100;
+}
+
+header a:visited {
+  color: #FFF;
 }
 
 header div {
@@ -50,7 +57,7 @@ header div {
 
 .popup {
     background-color: #c0c0c0;
-    width: fit-content;
+    max-width: fit-content;
 }
 
 .header-popup {
@@ -65,51 +72,163 @@ header div {
 }
 
 #ds {
+    position: absolute;
     width: 442px;
     height: 346px;
+    bottom: 0;
+    left: 20%;
+}
+
+#links {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    display: flex;
+    transform: rotate(-23.179deg);
+    flex-direction: column;
+    justify-content: center;
+}
+#links a {
+    display: block;
+    color: #FFF;
+}
+
+#links a:hover {
+    color: #FFF;
+}
+
+#links a:visited {
+    color: #FFF;
 }
 
 #dog {
     width: 118px;
     height: 115px;
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+}
+
+#apps {
+    width: 204px;
+    height: 109px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 12px;
 }
 
 #sparkles {
     width: 167px;
     height: 186px;
-}
-
-#star {
-    width: 129px;
-    height: 137px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 #heart {
     width: 137px;
     height: 126px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-70%, -50%);
+    z-index: 1;
 }
 
 #cursor {
     width: 62px;
     height: 64px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, 0);
 }
 
 #mess {
-    width: 309hpx;
+    width: 309px;
     height: 267px;
+    position: absolute;
+    right: 10%;
+    top: 50%;
 }
 
 #flower {
     width: 151px;
     height: 147px;
+    position: absolute;
+    bottom: 10%;
+    right: 30%;
 }
 
+#disco {
+    width: 230px;
+    height: 435px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#container-popup {
+    position: relative;
+    max-width: 310px;
+    max-height: 150px;
+    top: 20%;
+    left: 30%;
+}
+
+#frame {
+    width: 347px;
+    height: 475px;
+    z-index: 2;
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+}
 
 #frame #text {
     position: absolute;
     bottom: 0%;
+    padding-left: 111px;
 }
 
+#text * {
+    padding: 0 0 12px;
+    margin: 0;
+}
+
+#container-review {
+    position: relative;
+    left: 50%;
+    top: 40%;
+}
+
+#review {
+    text-align: center;
+}
+
+button {
+    margin-bottom: 12px;
+    padding: 2px 14px;
+    border: 1px solid #000;
+    color: #000;
+    background-color: #D9D9D9;
+    font-family: "Kdam Thmor Pro";
+    border-radius: 0 8px;
+}
+
+#star {
+    width: 129px;
+    height: 137px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-80%, 40%);
+}
+
+/* 
 #legal{
     color: #FFF;
     position: absolute;
@@ -119,7 +238,7 @@ header div {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-underline-position: from-font;
-}
+} */
 
 /* Source : https://developer.mozilla.org/en-US/ 
 la vie j'adore ce site il est trop bien renseigné*/
