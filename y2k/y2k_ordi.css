@@ -245,102 +245,17 @@ footer {
     z-index: 100;
     top:90%;
     bottom:80%;
+    left : 50%;
 
 }
 
-/*style emo*/
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=New+Rocker&display=swap');
-
-body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    background-image: url("../assets/emo/wallpaperv3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 1440px;
-    height: 1024px;
-    aspect-ratio: 45/32;
+.button_change {
+    position:fixed;
+    z-index: 100;
+    top:90%;
+    bottom:80%;
+    left: 100%;
 }
-
-body #image_1 {
-    content: url("../assets/emo/case\ 1.png");
-}
-
-body #image-2 {
-  position: relative;
-  content: url("../assets/emo/pfp.png");
-  bottom: 450px;
-  left: 360px;
-  height: 25%
-
-}
-
-body #image_3 {
-  position: relative;
-  content: url("../assets/emo/moon\ 1.png");
-  bottom: 730px;
-  left: 850px;
-}
-
-body #image_4 {
-  position: relative;
-  content: url("../assets/emo/chain_skellet.png");
-  bottom: 580px;
-  right: 270px;
-}
-
-#text {
-  position: relative;
-  color: #531D67;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #DCDCDC;
-  font-family: "New Rocker";
-  font-size: 30px;
-  font-weight: 400;
-  width: 309px;
-  height: 59.427px;
-  margin-left: 30px;
-  bottom:50px;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  position: sticky;
-  padding: 18px 0 9px;
-  top: 0;
-  width: 100vw;
-  height: 90px;
-  background-image: url("../assets/emo/header.png");
-  z-index: 100;
-}
-
-#navbar {
-  display: flex;
-  position: sticky;
-  margin-top: 30px;
-  width: 100%;
-  padding: 20px;
-  position: solid;
-  padding: 20px;
-  text-align: start;
-  align-items: flex-start;
-  justify-content: space-between;
-  color: #531D67;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #FFF;
-  font-family: "New Rocker";
-  font-size: 40px;
-  font-weight: 400;
-  bottom: 40px;
-}
-#write {
-  margin-left: 850px;
-  margin-top: 200px;
-}
-
 
 /* boutton pour le leave a review*/
 /*
@@ -378,111 +293,4 @@ body {
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-}
-
-/* Fenêtre principale */
-#window {
-    max-width: 978px;
-    width: 95%;
-    height: auto;
-    min-height: 828px;
-    flex-wrap: wrap;
-}
-
-/* Sidebar */
-#sidebar {
-    min-height: 809px;
-}
-
-/* Main */
-#main {
-    max-width: 624px;
-    width: 100%;
-    height: auto;
-    min-height: 728px;
-}
-
-/* Boutons */
-button {
-    width: 90%;
-    max-width: 400px;
-}
-
-
-/* TABLETTE (≤ 1024px)*/
-
-@media screen and (max-width: 1024px) {
-
-    #window {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #sidebar {
-        width: 100%;
-        height: auto;
-        min-height: unset;
-    }
-
-    #main {
-        width: 100%;
-    }
-
-    .posting,
-    .sending {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-        bottom: auto;
-        margin: 10px auto;
-        display: block;
-    }
-}
-
-
-/* telephone (≤ 600px) */
-
-@media screen and (max-width: 600px) {
-
-    h1 {
-        font-size: 32px;
-        text-align: center;
-    }
-
-    #navbar {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    #text {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    #window {
-        width: 100%;
-        min-height: unset;
-    }
-
-    #sidebar {
-        display: none; /* optionnel : enlève la sidebar sur mobile */
-    }
-
-    #main {
-        padding: 10px;
-    }
-
-    footer {
-        font-size: 0.6em;
-    }
-
-    /* Images décoratives désactivées sur mobile */
-    #image_1,
-    #image_2,
-    #image_3,
-    #image_4 {
-        display: none;
-    }
 }
