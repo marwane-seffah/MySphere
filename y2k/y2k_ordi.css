@@ -248,6 +248,99 @@ footer {
 
 }
 
+/*style emo*/
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=New+Rocker&display=swap');
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/emo/wallpaperv3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+    height: 1024px;
+    aspect-ratio: 45/32;
+}
+
+body #image_1 {
+    content: url("../assets/emo/case\ 1.png");
+}
+
+body #image-2 {
+  position: relative;
+  content: url("../assets/emo/pfp.png");
+  bottom: 450px;
+  left: 360px;
+  height: 25%
+
+}
+
+body #image_3 {
+  position: relative;
+  content: url("../assets/emo/moon\ 1.png");
+  bottom: 730px;
+  left: 850px;
+}
+
+body #image_4 {
+  position: relative;
+  content: url("../assets/emo/chain_skellet.png");
+  bottom: 580px;
+  right: 270px;
+}
+
+#text {
+  position: relative;
+  color: #531D67;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #DCDCDC;
+  font-family: "New Rocker";
+  font-size: 30px;
+  font-weight: 400;
+  width: 309px;
+  height: 59.427px;
+  margin-left: 30px;
+  bottom:50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  padding: 18px 0 9px;
+  top: 0;
+  width: 100vw;
+  height: 90px;
+  background-image: url("../assets/emo/header.png");
+  z-index: 100;
+}
+
+#navbar {
+  display: flex;
+  position: sticky;
+  margin-top: 30px;
+  width: 100%;
+  padding: 20px;
+  position: solid;
+  padding: 20px;
+  text-align: start;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #531D67;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFF;
+  font-family: "New Rocker";
+  font-size: 40px;
+  font-weight: 400;
+  bottom: 40px;
+}
+#write {
+  margin-left: 850px;
+  margin-top: 200px;
+}
+
 
 /* boutton pour le leave a review*/
 /*
