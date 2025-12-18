@@ -3,6 +3,7 @@ function createEmail (event) {
     event.preventDefault() // empêcher la page de se recharger
     let prenom = document.getElementById('prenom').value
     let nom = document.getElementById('nom').value
+    let mail = document.getElementById('mail').value
 
     let genre
     if (document.getElementById('femme').checked) {
@@ -16,7 +17,7 @@ function createEmail (event) {
 
     // https://captainverify.com/fr/blog/personnaliser-mailto.html
     let contenu = `&body=Bonjour, voici mon retour ! \nJe m'intitule ${nom} ${prenom} et je suis ${genre} qui voulait vous transmettre ce messgae: \n
-${msg} \nVoilà, bonne journée !`
+${msg} \nEt voici mon mail: ${mail}. \nVoilà, bonne journée !`
     let lien = "mailto:marwane.seffah@etu.univ-amu.fr;tasnim.sebri@etu.univ-amu.fr;lucie.piannelli@etu.univ-amu.fr"
     let objet = `?subject=Retour de ${prenom}`
 

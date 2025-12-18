@@ -78,16 +78,17 @@
                     <h2>Leave a review</h2>
                 </div>
                 <form>
-                <label for="prenom">First name: <input id="prenom" type="text" name="prenom" value=" " ></label>
-                <label for="nom">Last name: <input id="nom" type="text" name="nom" value=" "></label>
+                <label for="prenom">First name: <input id="prenom" type="text" name="prenom" required></label>
+                <label for="nom">Last name: <input id="nom" type="text" name="nom" required></label>
+                <label for="mail">Email: <input id="mail" type="email" name="mail" required></label>
                 
-                <label for="femme"><input id="femme" type="radio" name="sexe" value="" checked>Woman </label>
-                <label for="homme"><input id="homme" type="radio" name="sexe" value=""> Man </label>
-                <label for="kebab"><input id="kebab" type="radio" name="sexe" value=""> Other (kebab)</label>
+                <label for="femme"><input id="femme" type="radio" name="sexe" checked>Woman </label>
+                <label for="homme"><input id="homme" type="radio" name="sexe"> Man </label>
+                <label for="kebab"><input id="kebab" type="radio" name="sexe"> Other (kebab)</label>
                 
                 <label for="impression">Your message <textarea  id="impression" name="impression" rows="2" cols="50"></textarea></label>
                 <div id="submit-section">
-                    <input type="submit" value="Leave a review">
+                    <input type="submit" onclick="createEmail(event)" value="Leave a review">
                 </div>
                 
             </form>
@@ -99,5 +100,6 @@
     </div>
 
     <script src="../scripts/date.js"></script>
+    <script src="../scripts/email.js"></script>
 </body>
 </html>
