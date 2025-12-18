@@ -17,3 +17,18 @@ function showSurprise () {
 function showWindowWriteSomething () {
 
 }
+
+const switchButton = document.getElementById("switch_theme");
+const themeLink = document.getElementById("theme");
+
+let currentTheme = "emo";
+
+switchButton.addEventListener("click", () => {
+    if (currentTheme === "emo") {
+        themeLink.href = "./y2k_ordi.css";
+        currentTheme = "y2k";
+    } else {
+        themeLink.href = "./emo_ordi.css";
+        currentTheme = "emo";
+    }
+});
