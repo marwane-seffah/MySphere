@@ -11,7 +11,7 @@ function showFriends () {
 }
 
 function showSurprise () {
-    window.location.href='assets/y2k/rick_test_2.mp4'
+    window.location.href='../assets/y2k/rick_test_2.mp4'
 }
 
 function showWindowWriteSomething () {
