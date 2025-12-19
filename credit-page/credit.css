@@ -231,11 +231,6 @@ body {
     background-position: center;
 }
 
-/* Sécurise le flex principal */
-#main {
-    flex-wrap: wrap;
-}
-
 /* tablette (≤ 1024px) */
 
 @media screen and (max-width: 1024px) {
